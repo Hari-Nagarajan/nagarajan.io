@@ -92,9 +92,6 @@ import bridgePhoto from '~/assets/images/bridgePhoto.jpeg'
       margin-right: 1em;
     }
 
-    #photoCol img {
-    }
-
   }
 
 </style>

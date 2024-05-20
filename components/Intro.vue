@@ -46,7 +46,6 @@ import Hero from '@/components/Hero.vue'
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
@@ -111,7 +110,5 @@ import Hero from '@/components/Hero.vue'
     margin-right: 1em;
   }
 
-  .photoCol img {
-  }
 }
 </style>
