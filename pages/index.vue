@@ -9,7 +9,7 @@
   import Intro from '@/components/Intro'
   import Projects from '@/components/Projects/Projects'
 
-  export default {
+  definePageMeta({
     components: {
       Intro,
       Projects
@@ -17,7 +17,7 @@
     data() {
       return {};
     }
-  };
+  });
 </script>
 
 <style scoped>

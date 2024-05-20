@@ -58,7 +58,7 @@
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-image: url("~/assets/images/bg.JPEG");
+    background-image: url("~@/assets/images/bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
