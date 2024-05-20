@@ -5,11 +5,12 @@ export default defineNuxtConfig({
     "@nuxt/image"
   ],
   image: {
-    inject: true
+    inject: true,
+    format: ['webp']
   },
 
   vite: {
-    assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.png', '**/*.svg', '**/*.ico']
+    assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.png', '**/*.svg']
   },
 
   /*

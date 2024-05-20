@@ -2,19 +2,15 @@
   <div id="heroImg">
     <div id="photoCol">
       <picture>
-        <source :srcset="require('~/assets/images/bridgePhoto.JPEG?webp')" type="image/webp"/>
-        <source :srcset="require('~/assets/images/bridgePhoto.JPEG')" type="image/jpeg"/>
-        <img :src="require('~/assets/images/bridgePhoto.JPEG')" alt="photo of Hari"/>
+        <source :srcset="bridgePhoto" type="image/jpeg"/>
+        <img :src="bridgePhoto" alt="photo of Hari"/>
       </picture>
     </div>
   </div>
-
 </template>
 
-<script>
-  export default {
-    name: "Hero"
-  }
+<script setup>
+import bridgePhoto from '~/assets/images/bridgePhoto.jpeg'
 </script>
 
 <style scoped>
@@ -51,7 +47,7 @@
     -webkit-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     transform: rotate(15deg);
-    background-image: url("~/assets/images/bridgePhoto.JPEG");
+    background-image: url("~/assets/images/bridgePhoto.jpeg");
     background-size: cover;
     border: 4px double #E77470;
     opacity: 0.4;
@@ -69,7 +65,7 @@
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-    background-image: url("~/assets/images/bridgePhoto.JPEG");
+    background-image: url("~/assets/images/bridgePhoto.jpeg");
     border: 4px double #E77470;
     background-size: cover;
     opacity: 0.4;
