@@ -1,25 +1,16 @@
 <template>
   <div id="main">
-    <nuxt id="container"/>
-    <Copyright/>
+    <NuxtPage id="container" />
+    <Copyright />
   </div>
-
 </template>
 
-<script>
-  import Copyright from '@/components/Copyright'
-  import Intro from '@/components/Intro'
-
-  export default {
-    components: {
-      Copyright,
-      Intro
-    },
-    data() {
-      return {};
-    }
-  };
+<script setup>
+import Copyright from '@/components/Copyright.vue'
+import Intro from '@/components/Intro.vue'
 </script>
+
+
 <style>
 
   #main {
@@ -58,7 +49,7 @@
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-image: url("~@/assets/images/bg.jpeg");
+    background-image: url("~/assets/images/bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

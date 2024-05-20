@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import bridgePhoto from '@/assets/images/bridgePhoto.jpeg'
+import bridgePhoto from '~/assets/images/bridgePhoto.jpeg'
 </script>
 
 <style scoped>
@@ -47,7 +47,7 @@ import bridgePhoto from '@/assets/images/bridgePhoto.jpeg'
     -webkit-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     transform: rotate(15deg);
-    background-image: url("~@/assets/images/bridgePhoto.jpeg");
+    background-image: url("~/assets/images/bridgePhoto.jpeg");
     background-size: cover;
     border: 4px double #E77470;
     opacity: 0.4;
@@ -65,7 +65,7 @@ import bridgePhoto from '@/assets/images/bridgePhoto.jpeg'
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-    background-image: url("~@/assets/images/bridgePhoto.jpeg");
+    background-image: url("~/assets/images/bridgePhoto.jpeg");
     border: 4px double #E77470;
     background-size: cover;
     opacity: 0.4;

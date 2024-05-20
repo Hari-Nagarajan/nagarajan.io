@@ -5,10 +5,11 @@ export default defineNuxtConfig({
     "@nuxt/image"
   ],
   image: {
+    inject: true
   },
 
   vite: {
-    assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.png', '**/*.svg']
+    assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.png', '**/*.svg', '**/*.ico']
   },
 
   /*

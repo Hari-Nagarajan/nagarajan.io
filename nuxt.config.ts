@@ -5,6 +5,8 @@ export default defineNuxtConfig({
     "@nuxt/image"
   ],
   image: {
+    inject: true,
+    format: ['webp']
   },
 
   vite: {
