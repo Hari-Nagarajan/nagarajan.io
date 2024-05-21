@@ -4,6 +4,13 @@ node_modules
 # logs
 npm-debug.log
 
+# Nuxt build
+.nuxt
+.output
+
+# Nuxt generate
+dist
+
 # AWS Stuff
 policy.json
 /.idea/

@@ -12,13 +12,19 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue';
-  import { useFetch, useRoute } from 'nuxt/app';
+  import { useRoute } from 'nuxt/app';
   
   const route = useRoute();
   const postId = route.params.id;
   
-  const { data: post, pending, error } = await useFetch(`/api/posts/${postId}`);
+  const { data: post, pending: isLoading, error } = await useFetch(`/api/posts/${postId}`, {
+    headers: {
+      fetchMode: 'headless',
+    },
+    server: true,
+    watch: false,
+  });
+
   </script>
   
   <style scoped>

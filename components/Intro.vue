@@ -26,7 +26,6 @@
 <script setup>
 import Hero from '@/components/Hero.vue'
 
-// let result = useState('result');
 const { data: result, pending: isLoading, error } = await useFetch('/api/posts', {
     headers: {
       fetchMode: 'headless',
