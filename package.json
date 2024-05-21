@@ -5,7 +5,7 @@
   "author": "Hari Nagarajan",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -16,14 +16,17 @@
     "@nuxt/image": "^1.7.0",
     "add": "^2.0.6",
     "ajv": "^8.13.0",
+    "axios": "^1.7.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
+    "jsdom": "^24.0.0",
     "nanogallery2": "^3.0.5",
     "nuxt": "^3.11.2",
     "url-loader": "^4.1.1",
     "vue-burger-menu": "^1.0.0",
     "vue-fixed-header": "^1.0.4",
-    "webp-loader": "^0.6.0"
+    "webp-loader": "^0.6.0",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",

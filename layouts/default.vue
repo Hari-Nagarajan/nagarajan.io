@@ -1,65 +1,43 @@
 <template>
   <div id="main">
     <NuxtPage id="container" />
-    <Copyright />
+    <Footer />
   </div>
 </template>
 
 <script setup>
-import Copyright from '@/components/Copyright.vue'
-import Intro from '@/components/Intro.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 
 <style>
 
-  #main {
+#main {
     margin: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    max-height: 100vh;
     padding: 0;
+    width: 100%;
+    min-height: 100vh; /* Ensure it's at least as tall as the viewport */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack children vertically */
   }
 
   #container {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    flex: 1 0 auto;
+    flex: 1; /* This allows the container to expand and fill available space */
+    width: 100%; /* Full width of its parent */
   }
 
-  html {
-    font-family: "Open Sans", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    word-spacing: 1px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    height: 100%;
+  html, body {
+    height: 100%; /* Ensure html and body are also taking full height */
     min-height: 100%;
-  }
-
-  body {
     margin: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
+    padding: 0;
     background-image: url("~/assets/images/bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: column; /* This is important for the overall page structure */
   }
 
   /* latin-ext */

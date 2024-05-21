@@ -8,17 +8,33 @@
         <p>
           I'm a Software Engineer from Richmond, VA that likes to build things.
         </p>
-        <a href="https://twitter.com/HariRVA?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow
-          @HariRVA</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <Hero />
     </div>
+    <div>
+      <h1>Latest Posts</h1>
+      <ul>
+        <li v-for="post in result" :key="post.guid">
+          <router-link :to="`/posts/${post.guid}`">{{ post.title }} - {{ new Date(post.pubDate).toLocaleDateString() }}</router-link>
+        </li>
+      </ul>    
+    </div>
+
   </div>
 </template>
 
 <script setup>
 import Hero from '@/components/Hero.vue'
+
+// let result = useState('result');
+const { data: result, pending: isLoading, error } = await useFetch('/api/posts', {
+    headers: {
+      fetchMode: 'headless',
+    },
+    server: true,
+    watch: false,
+  });
+
 </script>
 
 <style scoped>

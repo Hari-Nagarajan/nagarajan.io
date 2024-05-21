@@ -1,18 +1,15 @@
 <template>
   <div id="content">
     <Intro/>
-    <Projects/>
   </div>
 </template>
 
 <script>
   import Intro from '@/components/Intro'
-  import Projects from '@/components/Projects/Projects'
 
   definePageMeta({
     components: {
-      Intro,
-      Projects
+      Intro
     },
     data() {
       return {};

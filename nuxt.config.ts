@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     format: ['webp']
   },
 
+  nitro: {
+    preset: 'node-server', // Change to 'node-server' or appropriate preset
+  },
+
   vite: {
     assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.png', '**/*.svg']
   },
